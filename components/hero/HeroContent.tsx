@@ -153,10 +153,10 @@ export default function HeroContent() {
             className="font-cormorant text-sm sm:text-base leading-relaxed italic"
             style={{ color: TEXT_MUTED }}
           >
-            Dan di antara tanda-tanda kebesaran-Nya, Dia menciptakan
-            pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung
-            dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa
-            kasih dan sayang.
+            "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan 
+            pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, 
+            dan Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu 
+            benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
           </p>
 
           <p
