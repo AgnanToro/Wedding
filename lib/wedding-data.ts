@@ -1,0 +1,199 @@
+// TypeScript interfaces
+
+export interface TimelineMilestone {
+  year: string
+  title: string       // ≤ 60 characters
+  description: string // ≤ 200 characters
+}
+
+export interface GalleryPhoto {
+  src: string
+  alt: string
+  width: number
+  height: number
+}
+
+export interface Wish {
+  id: string
+  name: string
+  message: string
+  attendance: 'Hadir' | 'Tidak Hadir'
+  submittedAt: number // Date.now() timestamp
+}
+
+export interface BankAccount {
+  id: string
+  bankName: string
+  accountHolder: string
+  accountNumber: string
+}
+
+// Wedding configuration
+
+export const WEDDING_CONFIG = {
+  groomName: 'Azis',
+  brideName: 'Laeli',
+  weddingDate: new Date('2026-05-26T00:00:00+07:00'),
+  venue: {
+    akad: {
+      name: 'Kediaman Mempelai Wanita',
+      address: 'Blok Karang Anyar Desa Sumber Lor Kec. Babakan Kab.Cirebon',
+      time: '09:00',
+      date: 'Selasa, 26 Mei 2026',
+      mapsUrl: 'https://www.google.com/maps?q=-6.8754898,108.7331113',
+    },
+    reception: {
+      name: 'Kediaman Mempelai Wanita',
+      address: 'Blok Karang Anyar Desa Sumber Lor Kec. Babakan Kab.Cirebon',
+      time: '10:00',
+      date: 'Selasa, 26 Mei 2026',
+      mapsUrl: 'https://www.google.com/maps?q=-6.8754898,108.7331113',
+    },
+  },
+  heroPhoto: '/couple-header.webp',
+  openingPhoto: '/couple-header.webp',
+  openingPhotos: ['/couple-header.webp', '/couple-header2.webp'],
+  music: '/music.mp3',
+}
+
+// Timeline milestones
+
+export const TIMELINE_MILESTONES: TimelineMilestone[] = [
+  {
+    year: '2019',
+    title: 'Pertemuan Pertama',
+    description:
+      'Takdir mempertemukan kami di sebuah seminar di kampus, dan sejak saat itu dunia terasa berbeda.',
+  },
+  {
+    year: '2020',
+    title: 'Mulai Saling Mengenal',
+    description:
+      'Dari obrolan panjang di warung kopi hingga pesan singkat tengah malam, kami mulai memahami satu sama lain.',
+  },
+  {
+    year: '2021',
+    title: 'Resmi Berpacaran',
+    description:
+      'Di bawah langit senja Pantai Anyer, Ahmad mengungkapkan perasaannya dan Siti menjawab dengan senyuman.',
+  },
+  {
+    year: '2023',
+    title: 'Lamaran',
+    description:
+      'Dikelilingi oleh keluarga tercinta, Ahmad berlutut dan Siti berkata iya dengan air mata kebahagiaan.',
+  },
+  {
+    year: '2025',
+    title: 'Menuju Pernikahan',
+    description:
+      'Setelah perjalanan panjang yang indah, kami siap melangkah ke babak baru kehidupan bersama.',
+  },
+]
+
+// Gallery photos
+
+export const GALLERY_PHOTOS: GalleryPhoto[] = [
+  {
+    src: '/images/gallery-1.webp',
+    alt: 'Ahmad dan Siti bersama di taman saat musim bunga',
+    width: 800,
+    height: 600,
+  },
+  {
+    src: '/images/gallery-2.webp',
+    alt: 'Momen romantis pasangan di tepi pantai saat senja',
+    width: 800,
+    height: 600,
+  },
+  {
+    src: '/images/gallery-3.webp',
+    alt: 'Sesi foto pre-wedding dengan latar belakang bunga',
+    width: 800,
+    height: 600,
+  },
+  {
+    src: '/images/gallery-4.webp',
+    alt: 'Ahmad dan Siti tertawa bersama di kafe favorit mereka',
+    width: 800,
+    height: 600,
+  },
+  {
+    src: '/images/gallery-5.webp',
+    alt: 'Foto berdua di bawah lampu hias saat malam hari',
+    width: 800,
+    height: 600,
+  },
+  {
+    src: '/images/gallery-6.webp',
+    alt: 'Momen lamaran yang penuh kebahagiaan bersama keluarga',
+    width: 800,
+    height: 600,
+  },
+]
+
+// Bank accounts for gifts
+
+export const BANK_ACCOUNTS: BankAccount[] = [
+  {
+    id: '1',
+    bankName: 'Bank Central Asia (BCA)',
+    accountHolder: 'Ahmad Rizki Pratama',
+    accountNumber: '1234567890',
+  },
+  {
+    id: '2',
+    bankName: 'Bank Mandiri',
+    accountHolder: 'Siti Nurhaliza Putri',
+    accountNumber: '0987654321',
+  },
+]
+
+// QRIS image path
+
+export const QRIS_IMAGE: string = '/images/qris.webp'
+
+// Initial wishes (pre-populated sample data)
+
+export const INITIAL_WISHES: Wish[] = [
+  {
+    id: 'wish-1',
+    name: 'Budi Santoso',
+    message:
+      'Selamat menempuh hidup baru! Semoga kalian selalu bahagia, saling menjaga, dan diberkahi keluarga yang sakinah mawaddah wa rahmah.',
+    attendance: 'Hadir',
+    submittedAt: Date.now() - 1000 * 60 * 5, // 5 minutes ago
+  },
+  {
+    id: 'wish-2',
+    name: 'Dewi Rahmawati',
+    message:
+      'Barakallahu lakuma wa baraka alaikuma wa jama\'a bainakuma fi khair. Semoga pernikahan ini menjadi awal kebahagiaan yang abadi.',
+    attendance: 'Hadir',
+    submittedAt: Date.now() - 1000 * 60 * 15, // 15 minutes ago
+  },
+  {
+    id: 'wish-3',
+    name: 'Rendra Kusuma',
+    message:
+      'Wah, akhirnya hari yang ditunggu-tunggu tiba! Selamat untuk Ahmad dan Siti, semoga rumah tangga kalian penuh cinta dan tawa.',
+    attendance: 'Hadir',
+    submittedAt: Date.now() - 1000 * 60 * 30, // 30 minutes ago
+  },
+  {
+    id: 'wish-4',
+    name: 'Fitri Handayani',
+    message:
+      'Maaf tidak bisa hadir langsung, tapi doa tulus selalu menyertai kalian. Semoga menjadi pasangan yang saling menguatkan selamanya.',
+    attendance: 'Tidak Hadir',
+    submittedAt: Date.now() - 1000 * 60 * 60, // 1 hour ago
+  },
+  {
+    id: 'wish-5',
+    name: 'Agus Permana',
+    message:
+      'Selamat bahagia Ahmad dan Siti! Semoga rumah tangga kalian selalu dalam lindungan Allah SWT dan dipenuhi berkah di setiap langkahnya.',
+    attendance: 'Hadir',
+    submittedAt: Date.now() - 1000 * 60 * 90, // 90 minutes ago
+  },
+]
