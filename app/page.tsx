@@ -17,7 +17,7 @@ export default function Home() {
         <CoupleSection />
         <LdrSection />
         <AcaraSection />
-        <TimelineSection />
+       
         <GallerySection />
         <RSVPAndWishesSection />
         <GiftSection />
