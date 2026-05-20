@@ -1,6 +1,7 @@
 import OpeningScreen from '@/components/opening/OpeningScreen'
 import HeroSection from '@/components/hero/HeroSection'
 import CoupleSection from '@/components/couple/CoupleSection'
+import LdrSection from '@/components/ldr/LdrSection'
 import TimelineSection from '@/components/timeline/TimelineSection'
 import GallerySection from '@/components/gallery/GallerySection'
 import EventSection from '@/components/events/EventSection'
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <CoupleSection />
+        <LdrSection />
         <TimelineSection />
         <GallerySection />
         <EventSection />
