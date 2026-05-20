@@ -66,25 +66,9 @@ export default function GiftCard({
 
       <div className="relative flex h-full flex-col p-3 sm:p-3.5">
         {/* Top */}
-        <div className="flex items-center justify-between">
-          {/* Chip */}
-          <div
-            className="w-9 h-7 rounded-md"
-            style={{
-              background:
-                'linear-gradient(135deg, #d4a853 0%, #f0c84a 50%, #d4a853 100%)',
-            }}
-          >
-            <div className="grid w-full h-full grid-cols-2 gap-0.5 p-1 opacity-70">
-              <div className="rounded-sm bg-yellow-700/40" />
-              <div className="rounded-sm bg-yellow-700/40" />
-              <div className="rounded-sm bg-yellow-700/40" />
-              <div className="rounded-sm bg-yellow-700/40" />
-            </div>
-          </div>
-
+        <div className="flex justify-end">
           {/* Logo */}
-          <div className="relative h-7 w-22">
+          <div className="relative h-7 w-[88px]">
             <Image
               src={logoSrc}
               alt={bankName}
@@ -99,8 +83,26 @@ export default function GiftCard({
         </div>
 
         {/* Content */}
-       <div className="mt-4 flex-1 flex items-end justify-between">
+        <div className="mt-auto flex items-end justify-between">
+          {/* Left */}
           <div>
+            {/* Chip */}
+            <div
+              className="w-9 h-7 rounded-md mb-2"
+              style={{
+                background:
+                  'linear-gradient(135deg, #d4a853 0%, #f0c84a 50%, #d4a853 100%)',
+              }}
+            >
+              <div className="grid w-full h-full grid-cols-2 gap-0.5 p-1 opacity-70">
+                <div className="rounded-sm bg-yellow-700/40" />
+                <div className="rounded-sm bg-yellow-700/40" />
+                <div className="rounded-sm bg-yellow-700/40" />
+                <div className="rounded-sm bg-yellow-700/40" />
+              </div>
+            </div>
+
+            {/* Account Name */}
             <p
               className="font-playfair text-[15px] font-semibold leading-none"
               style={{ color: '#3a3330' }}
@@ -108,39 +110,38 @@ export default function GiftCard({
               {accountHolder}
             </p>
 
+            {/* Account Number */}
             <p
               className="font-cormorant text-[13px] tracking-[0.18em] mt-1 leading-none"
               style={{ color: '#6a5733' }}
             >
               {accountNumber}
             </p>
+
+            {copyError && (
+              <p className="font-cormorant text-red-700 text-[11px] mt-1">
+                Salin manual: {accountNumber}
+              </p>
+            )}
           </div>
 
           {/* Button */}
-          <div >
-            <button
-              onClick={handleCopy}
-              className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg font-cormorant font-semibold text-[13px] tracking-wide transition-opacity hover:opacity-80 min-h-[34px]"
-              style={{
-                backgroundColor: '#3a3330',
-                color: '#f0e3c2',
-              }}
-            >
-              <IconCopy />
+          <button
+            onClick={handleCopy}
+            className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg font-cormorant font-semibold text-[13px] tracking-wide transition-opacity hover:opacity-80 min-h-[34px]"
+            style={{
+              backgroundColor: '#3a3330',
+              color: '#f0e3c2',
+            }}
+          >
+            <IconCopy />
 
-              {copied
-                ? 'Tersalin!'
-                : copyError
-                  ? 'Gagal'
-                  : 'Salin'}
-            </button>
-          </div>
-
-          {copyError && (
-            <p className="font-cormorant text-red-700 text-[11px] mt-1 text-right">
-              Salin manual: {accountNumber}
-            </p>
-          )}
+            {copied
+              ? 'Tersalin!'
+              : copyError
+                ? 'Gagal'
+                : 'Salin'}
+          </button>
         </div>
       </div>
     </div>
