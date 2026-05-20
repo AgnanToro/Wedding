@@ -129,47 +129,5 @@ export const BANK_ACCOUNTS: BankAccount[] = [
 
 export const QRIS_IMAGE: string = '/images/qris.webp'
 
-// Initial wishes (pre-populated sample data)
-
-export const INITIAL_WISHES: Wish[] = [
-  {
-    id: 'wish-1',
-    name: 'Budi Santoso',
-    message:
-      'Selamat menempuh hidup baru! Semoga kalian selalu bahagia, saling menjaga, dan diberkahi keluarga yang sakinah mawaddah wa rahmah.',
-    attendance: 'Hadir',
-    submittedAt: Date.now() - 1000 * 60 * 5, // 5 minutes ago
-  },
-  {
-    id: 'wish-2',
-    name: 'Dewi Rahmawati',
-    message:
-      'Barakallahu lakuma wa baraka alaikuma wa jama\'a bainakuma fi khair. Semoga pernikahan ini menjadi awal kebahagiaan yang abadi.',
-    attendance: 'Hadir',
-    submittedAt: Date.now() - 1000 * 60 * 15, // 15 minutes ago
-  },
-  {
-    id: 'wish-3',
-    name: 'Rendra Kusuma',
-    message:
-      'Wah, akhirnya hari yang ditunggu-tunggu tiba! Selamat untuk Ahmad dan Siti, semoga rumah tangga kalian penuh cinta dan tawa.',
-    attendance: 'Hadir',
-    submittedAt: Date.now() - 1000 * 60 * 30, // 30 minutes ago
-  },
-  {
-    id: 'wish-4',
-    name: 'Fitri Handayani',
-    message:
-      'Maaf tidak bisa hadir langsung, tapi doa tulus selalu menyertai kalian. Semoga menjadi pasangan yang saling menguatkan selamanya.',
-    attendance: 'Tidak Hadir',
-    submittedAt: Date.now() - 1000 * 60 * 60, // 1 hour ago
-  },
-  {
-    id: 'wish-5',
-    name: 'Agus Permana',
-    message:
-      'Selamat bahagia Ahmad dan Siti! Semoga rumah tangga kalian selalu dalam lindungan Allah SWT dan dipenuhi berkah di setiap langkahnya.',
-    attendance: 'Hadir',
-    submittedAt: Date.now() - 1000 * 60 * 90, // 90 minutes ago
-  },
-]
+// Initial wishes — kosong, akan diisi oleh tamu yang submit form
+export const INITIAL_WISHES: Wish[] = []
