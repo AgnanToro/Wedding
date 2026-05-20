@@ -105,7 +105,7 @@ export default function GiftSection() {
                 QRIS
               </p>
               <p className="font-cormorant text-xs" style={{ color: '#6a5733' }}>
-                GoPay · OVO · Dana
+               
               </p>
             </div>
             <div className="flex justify-center">
@@ -120,7 +120,7 @@ export default function GiftSection() {
               </div>
             </div>
             <p className="font-cormorant text-xs text-center mt-2" style={{ color: '#6a5733' }}>
-              Screenshot lalu scan
+              Screenshot atau scan QR untuk transfer
             </p>
           </motion.div>
         </div>
