@@ -99,7 +99,7 @@ export default function GiftCard({
         </div>
 
         {/* Content */}
-        <div className="mt-4 flex-1 flex flex-col">
+       <div className="mt-4 flex-1 flex items-end justify-between">
           <div>
             <p
               className="font-playfair text-[15px] font-semibold leading-none"
@@ -117,7 +117,7 @@ export default function GiftCard({
           </div>
 
           {/* Button */}
-          <div className="flex justify-end">
+          <div >
             <button
               onClick={handleCopy}
               className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg font-cormorant font-semibold text-[13px] tracking-wide transition-opacity hover:opacity-80 min-h-[34px]"
