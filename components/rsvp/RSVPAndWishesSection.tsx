@@ -57,21 +57,19 @@ export default function RSVPAndWishesSection() {
         transition={{ duration: 0.7 }}
         className="mb-10"
       >
-        <div>
-          <div className="flex items-center gap-3">
-            <h2
-              className="font-playfair text-4xl sm:text-5xl font-semibold leading-tight"
-              style={{ color: TEXT_PRIMARY }}
-            >
+        <div className="text-center">
+          <div className="flex items-center justify-center gap-3">
+            <div className="flex-1 h-px max-w-[60px]" style={{ backgroundColor: ACCENT, opacity: 0.5 }} />
+            <h2 className="font-playfair text-4xl sm:text-5xl font-semibold leading-tight" style={{ color: TEXT_PRIMARY }}>
               Wedding
             </h2>
-            <div className="flex-1 h-px min-w-[40px]" style={{ backgroundColor: ACCENT, opacity: 0.5 }} />
+            <div className="flex-1 h-px max-w-[60px]" style={{ backgroundColor: ACCENT, opacity: 0.5 }} />
           </div>
           <p className="font-great-vibes text-3xl sm:text-4xl -mt-1" style={{ color: ACCENT }}>
             Wishes
           </p>
         </div>
-        <p className="font-cormorant text-lg sm:text-xl mt-4" style={{ color: TEXT_MUTED }}>
+        <p className="font-cormorant text-lg sm:text-xl mt-4 text-center" style={{ color: TEXT_MUTED }}>
           Tinggalkan kami doa terbaik anda untuk momen bahagia kami
         </p>
       </motion.div>

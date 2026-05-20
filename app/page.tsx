@@ -17,10 +17,11 @@ export default function Home() {
         <CoupleSection />
         <LdrSection />
         <AcaraSection />
-       
+
         <GallerySection />
-        <RSVPAndWishesSection />
         <GiftSection />
+        <RSVPAndWishesSection />
+
         <FooterSection />
       </main>
     </OpeningScreen>

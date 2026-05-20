@@ -113,7 +113,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
 export const BANK_ACCOUNTS: BankAccount[] = [
   {
     id: '1',
-    bankName: 'Bank Negara Indonesia (BNI)',
+    bankName: 'Bank Negara Indonesia',
     accountHolder: 'Abdul Azis',
     accountNumber: '2037420394',
   },
@@ -126,8 +126,7 @@ export const BANK_ACCOUNTS: BankAccount[] = [
 ]
 
 // QRIS image path
-
-export const QRIS_IMAGE: string = '/images/qris.webp'
+export const QRIS_IMAGE: string = '/qris.webp'
 
 // Initial wishes — kosong, akan diisi oleh tamu yang submit form
 export const INITIAL_WISHES: Wish[] = []

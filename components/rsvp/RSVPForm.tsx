@@ -206,7 +206,7 @@ export default function RSVPForm({ onSubmit }: RSVPFormProps) {
           rows={3}
           value={message}
           onChange={e => setMessage(e.target.value)}
-          placeholder="Tuliskan ucapan dan doamu untuk Azis & Laeli..."
+          placeholder="Ucapan dan doa untuk pengantin..."
           className={inputClass}
           style={inputStyle}
         />

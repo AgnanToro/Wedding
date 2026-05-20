@@ -10,8 +10,9 @@
   --font-great-vibes: var(--font-great-vibes);
 }
 
-html {
-  scroll-behavior: smooth;
+@keyframes bgSlideLeft {
+  from { background-position: 0% center; }
+  to   { background-position: -200% center; }
 }
 
 body {
