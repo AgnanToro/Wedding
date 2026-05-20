@@ -41,21 +41,21 @@ export default function WishesList({ wishes }: WishesListProps) {
             style={{ backgroundColor: '#f0e3c2', border: `1px solid ${ACCENT}50` }}
           >
             <div className="flex items-start justify-between gap-3">
+              {/* Left: name + message + date */}
               <div className="flex-1 min-w-0">
-                <div className="flex items-baseline justify-between gap-2 flex-wrap">
-                  <p className="font-playfair text-base font-semibold truncate" style={{ color: TEXT_PRIMARY }}>
-                    {wish.name}
-                  </p>
-                  <span className="font-cormorant text-xs shrink-0" style={{ color: TEXT_MUTED }}>
-                    {formatDate(wish.submittedAt)}
-                  </span>
-                </div>
+                <p className="font-playfair text-base font-semibold" style={{ color: TEXT_PRIMARY }}>
+                  {wish.name}
+                </p>
                 {wish.message && (
                   <p className="font-cormorant text-base mt-1 leading-relaxed break-words" style={{ color: TEXT_MUTED }}>
                     {wish.message}
                   </p>
                 )}
+                <p className="font-cormorant text-xs mt-2" style={{ color: TEXT_MUTED }}>
+                  {formatDate(wish.submittedAt)}
+                </p>
               </div>
+              {/* Right: attendance badge */}
               <span
                 className="shrink-0 text-xs px-3 py-1 rounded-full font-cormorant tracking-wide"
                 style={{

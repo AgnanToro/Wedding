@@ -97,7 +97,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { src: '/h11.webp', alt: 'Foto pre-wedding pasangan di studio dengan backdrop biru', width: 800, height: 600 },
   { src: '/UJ1_4660.webp', alt: 'Foto pre-wedding pasangan berpose elegan', width: 800, height: 600 },
   { src: '/UJ1_4673.webp', alt: 'Foto pre-wedding studio dengan gaun pengantin', width: 800, height: 600 },
-  { src: '/UJ1_4843.webp', alt: 'Foto mempelai pria Abdul Azis', width: 800, height: 1067 },
+  { src: '/halaman2-3.webp', alt: 'Foto mempelai pria Abdul Azis', width: 800, height: 1067 },
   { src: '/UJ1_4822.webp', alt: 'Foto mempelai wanita Nurfi Laeli', width: 800, height: 1067 },
   { src: '/halaman4-1.webp', alt: 'Foto pasangan bersama', width: 800, height: 600 },
   //slide kanan 

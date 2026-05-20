@@ -108,7 +108,7 @@ export default function OpeningScreen({ children }: OpeningScreenProps) {
                 <p className="font-cormorant text-cream/90 text-base sm:text-lg tracking-[0.4em] uppercase">
                   The Wedding Of
                 </p>
-                <h1 className="font-playfair text-cream text-5xl sm:text-6xl md:text-7xl font-medium leading-tight">
+                <h1 className="font-great-vibes text-cream text-6xl sm:text-7xl md:text-8xl leading-none drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
                   {coupleNames}
                 </h1>
                 <p className="font-cormorant text-cream/90 text-lg sm:text-xl tracking-wide">
