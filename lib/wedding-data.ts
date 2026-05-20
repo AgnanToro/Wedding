@@ -105,7 +105,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { src: '/UJ1_4843.webp', alt: 'Foto akad nikah pasangan', width: 800, height: 600 },
   { src: '/halaman3-3.webp', alt: 'Foto akad nikah bersama keluarga', width: 800, height: 600 },
   { src: '/10R (1).webp', alt: 'Foto resepsi pernikahan', width: 800, height: 600 },
-  { src: 'halaman2-2.webp', alt: 'Foto resepsi pasangan bersama tamu', width: 800, height: 600 },
+  { src: '/halaman2-2.webp', alt: 'Foto resepsi pasangan bersama tamu', width: 800, height: 600 },
 ]
 
 // Bank accounts for gifts
