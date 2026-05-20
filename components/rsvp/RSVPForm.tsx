@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { supabase } from '@/lib/supabase'
+import { createClient } from '@/utils/supabase/client'
 import { Wish, validateName, validateGuestCount } from '@/lib/utils'
 
 const ACCENT = '#b9965a'
@@ -57,7 +57,7 @@ export default function RSVPForm({ onSubmit }: RSVPFormProps) {
   const [errors, setErrors] = useState<{ name?: string; attendance?: string; guestCount?: string }>({})
   const [submitted, setSubmitted] = useState(false)
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     const newErrors: typeof errors = {}
     if (!validateName(name)) newErrors.name = 'Nama tidak boleh kosong'
@@ -73,15 +73,15 @@ export default function RSVPForm({ onSubmit }: RSVPFormProps) {
       submittedAt: Date.now(),
     }
 
-    // Save to Supabase (fire and forget — don't block the UI)
-    supabase.from('rsvp').insert({
+    // Save to Supabase using browser client
+    const supabase = createClient()
+    const { error } = await supabase.from('rsvp').insert({
       name: wish.name,
       attendance: wish.attendance,
       guest_count: guestCount,
       message: message || null,
-    }).then(({ error }) => {
-      if (error) console.error('Supabase insert error:', error.message)
     })
+    if (error) console.error('Supabase error:', error.message)
 
     onSubmit(wish)
     setSubmitted(true)
