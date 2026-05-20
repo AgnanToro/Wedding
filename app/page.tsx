@@ -2,9 +2,9 @@ import OpeningScreen from '@/components/opening/OpeningScreen'
 import HeroSection from '@/components/hero/HeroSection'
 import CoupleSection from '@/components/couple/CoupleSection'
 import LdrSection from '@/components/ldr/LdrSection'
+import AcaraSection from '@/components/events/AcaraSection'
 import TimelineSection from '@/components/timeline/TimelineSection'
 import GallerySection from '@/components/gallery/GallerySection'
-import EventSection from '@/components/events/EventSection'
 import RSVPAndWishesSection from '@/components/rsvp/RSVPAndWishesSection'
 import GiftSection from '@/components/gift/GiftSection'
 import FooterSection from '@/components/footer/FooterSection'
@@ -16,9 +16,9 @@ export default function Home() {
         <HeroSection />
         <CoupleSection />
         <LdrSection />
+        <AcaraSection />
         <TimelineSection />
         <GallerySection />
-        <EventSection />
         <RSVPAndWishesSection />
         <GiftSection />
         <FooterSection />
