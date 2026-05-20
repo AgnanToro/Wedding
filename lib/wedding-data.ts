@@ -121,7 +121,7 @@ export const BANK_ACCOUNTS: BankAccount[] = [
     id: '2',
     bankName: 'Bank Mandiri',
     accountHolder: 'Nurfi Laeli',
-    accountNumber: '1240017203869',
+    accountNumber: '1340017203869',
   },
 ]
 

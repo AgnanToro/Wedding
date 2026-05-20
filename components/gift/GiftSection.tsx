@@ -14,14 +14,14 @@ const BANKS = [
     bankName: 'Bank Negara Indonesia',
     accountHolder: 'Abdul Azis',
     accountNumber: '2037420394',
-    logoSrc: '/bni.webp',
+    logoSrc: '/Bni.jpg',
   },
   {
     id: '2',
     bankName: 'Bank Mandiri',
     accountHolder: 'Nurfi Laeli',
     accountNumber: '1240017203869',
-    logoSrc: '/mandiri.webp',
+    logoSrc: '/Mandiri.webp',
   },
 ]
 
