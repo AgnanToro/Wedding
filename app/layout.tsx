@@ -21,7 +21,7 @@ const greatVibes = Great_Vibes({
 });
 
 export const metadata: Metadata = {
-  title: "Undangan Pernikahan Ahmad & Siti",
+  title: "Undangan Pernikahan Azis dan Laeli",
   description:
     "Dengan penuh kebahagiaan, kami mengundang Anda untuk berbagi kebahagiaan di hari pernikahan kami.",
 };

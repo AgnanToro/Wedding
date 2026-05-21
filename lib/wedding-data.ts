@@ -127,7 +127,7 @@ export const BANK_ACCOUNTS: BankAccount[] = [
 ]
 
 // QRIS image path
-export const QRIS_IMAGE: string = '/Qris.webp'
+export const QRIS_IMAGE: string = '/qr.webp'
 
 // Initial wishes — kosong, akan diisi oleh tamu yang submit form
 export const INITIAL_WISHES: Wish[] = []
