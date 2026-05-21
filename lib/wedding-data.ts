@@ -95,15 +95,16 @@ export const TIMELINE_MILESTONES: TimelineMilestone[] = [
 
 export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { src: '/h11.webp', alt: 'Foto pre-wedding pasangan di studio dengan backdrop biru', width: 800, height: 600 },
-  { src: '/UJ1_4660.webp', alt: 'Foto pre-wedding pasangan berpose elegan', width: 800, height: 600 },
-  { src: '/UJ1_4673.webp', alt: 'Foto pre-wedding studio dengan gaun pengantin', width: 800, height: 600 },
-  { src: '/halaman2-3.webp', alt: 'Foto mempelai pria Abdul Azis', width: 800, height: 1067 },
+    { src: '/halaman3-4.webp', alt: 'Foto pasangan pre-wedding outdoor', width: 800, height: 1067 },
+  { src: '/10R.webp', alt: 'Foto pre-wedding studio dengan gaun pengantin', width: 800, height: 600 },
+  { src: '/halaman2-1.webp', alt: 'Foto mempelai pria Abdul Azis', width: 800, height: 1067 },
   { src: '/UJ1_4822.webp', alt: 'Foto mempelai wanita Nurfi Laeli', width: 800, height: 1067 },
-  { src: '/halaman4-1.webp', alt: 'Foto pasangan bersama', width: 800, height: 600 },
+  { src: '/4R (1).webp', alt: 'Foto pasangan bersama', width: 800, height: 600 },
   //slide kanan 
-  { src: '/halaman3-4.webp', alt: 'Foto pasangan pre-wedding outdoor', width: 800, height: 1067 },
+
+   { src: '/5R.webp', alt: 'Foto pre-wedding pasangan berpose elegan', width: 800, height: 600 },
   { src: '/UJ1_4843.webp', alt: 'Foto akad nikah pasangan', width: 800, height: 600 },
-  { src: '/halaman3-3.webp', alt: 'Foto akad nikah bersama keluarga', width: 800, height: 600 },
+  { src: '/4R (3).webp', alt: 'Foto akad nikah bersama keluarga', width: 800, height: 600 },
   { src: '/10R (1).webp', alt: 'Foto resepsi pernikahan', width: 800, height: 600 },
   { src: '/halaman2-2.webp', alt: 'Foto resepsi pasangan bersama tamu', width: 800, height: 600 },
 ]

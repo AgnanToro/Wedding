@@ -69,7 +69,7 @@ export default function GallerySection() {
               className="font-playfair text-4xl sm:text-5xl font-semibold leading-tight"
               style={{ color: TEXT_PRIMARY }}
             >
-              Wedding
+              After LDR
             </h2>
 
             <p
