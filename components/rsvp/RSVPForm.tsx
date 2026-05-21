@@ -52,7 +52,7 @@ function IconHeart() {
 export default function RSVPForm({ onSubmit }: RSVPFormProps) {
   const [name, setName] = useState('')
   const [attendance, setAttendance] = useState<'Hadir' | 'Tidak Hadir' | ''>('')
-  const [guestCount, setGuestCount] = useState(1)
+  const [guestCountInput, setGuestCountInput] = useState('1')
   const [message, setMessage] = useState('')
   const [errors, setErrors] = useState<{ name?: string; attendance?: string; guestCount?: string }>({})
   const [submitted, setSubmitted] = useState(false)
@@ -62,7 +62,8 @@ export default function RSVPForm({ onSubmit }: RSVPFormProps) {
     const newErrors: typeof errors = {}
     if (!validateName(name)) newErrors.name = 'Nama tidak boleh kosong'
     if (!attendance) newErrors.attendance = 'Pilih status kehadiran'
-    if (!validateGuestCount(guestCount)) newErrors.guestCount = 'Jumlah tamu 1–5 orang'
+    const guestCountNumber = Number(guestCountInput)
+    if (!validateGuestCount(guestCountNumber)) newErrors.guestCount = 'Jumlah tamu 1–5 orang'
     if (Object.keys(newErrors).length > 0) { setErrors(newErrors); return }
 
     const wish: Wish = {
@@ -78,7 +79,7 @@ export default function RSVPForm({ onSubmit }: RSVPFormProps) {
     const { error } = await supabase.from('rsvp').insert({
       name: wish.name,
       attendance: wish.attendance,
-      guest_count: guestCount,
+      guest_count: guestCountNumber,
       message: message || null,
     })
     if (error) console.error('Supabase error:', error.message)
@@ -88,7 +89,7 @@ export default function RSVPForm({ onSubmit }: RSVPFormProps) {
   }
 
   function handleReset() {
-    setName(''); setAttendance(''); setGuestCount(1)
+    setName(''); setAttendance(''); setGuestCountInput('1')
     setMessage(''); setErrors({}); setSubmitted(false)
   }
 
@@ -187,8 +188,11 @@ export default function RSVPForm({ onSubmit }: RSVPFormProps) {
           type="number"
           min={1}
           max={5}
-          value={guestCount}
-          onChange={e => setGuestCount(Number(e.target.value))}
+          value={guestCountInput}
+          onChange={e => setGuestCountInput(e.target.value)}
+          onBlur={() => {
+            if (guestCountInput.trim() === '') setGuestCountInput('1')
+          }}
           className={inputClass}
           style={inputStyle}
         />
