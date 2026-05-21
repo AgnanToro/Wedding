@@ -112,7 +112,7 @@ export default function RSVPForm({ onSubmit }: RSVPFormProps) {
         <button
           type="button"
           onClick={handleReset}
-          className="mt-6 font-cormorant font-semibold text-base px-8 py-3 rounded-full transition-opacity hover:opacity-80 min-h-[44px]"
+          className="mt-6 font-cormorant font-semibold text-base px-8 py-3 rounded-full transition-opacity hover:opacity-80 min-h-11"
           style={{ backgroundColor: ACCENT, color: '#fff' }}
         >
           Kirim Ucapan Lagi
@@ -150,7 +150,7 @@ export default function RSVPForm({ onSubmit }: RSVPFormProps) {
           <button
             type="button"
             onClick={() => setAttendance('Hadir')}
-            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl font-cormorant font-semibold text-base transition-all duration-200 min-h-[44px]"
+            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl font-cormorant font-semibold text-base transition-all duration-200 min-h-11"
             style={{
               backgroundColor: attendance === 'Hadir' ? ACCENT : 'rgba(255,255,255,0.6)',
               color: attendance === 'Hadir' ? '#fff' : TEXT_PRIMARY,
@@ -164,7 +164,7 @@ export default function RSVPForm({ onSubmit }: RSVPFormProps) {
           <button
             type="button"
             onClick={() => setAttendance('Tidak Hadir')}
-            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl font-cormorant font-semibold text-base transition-all duration-200 min-h-[44px]"
+            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl font-cormorant font-semibold text-base transition-all duration-200 min-h-11"
             style={{
               backgroundColor: attendance === 'Tidak Hadir' ? '#8b5e3c' : 'rgba(255,255,255,0.6)',
               color: attendance === 'Tidak Hadir' ? '#fff' : TEXT_PRIMARY,
@@ -218,7 +218,7 @@ export default function RSVPForm({ onSubmit }: RSVPFormProps) {
 
       <button
         type="submit"
-        className="w-full font-cormorant font-semibold text-lg py-3 rounded-xl transition-opacity hover:opacity-85 min-h-[44px] tracking-wide"
+        className="w-full font-cormorant font-semibold text-lg py-3 rounded-xl transition-opacity hover:opacity-85 min-h-11 tracking-wide"
         style={{ backgroundColor: ACCENT, color: '#fff' }}
       >
         Kirim Ucapan

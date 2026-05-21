@@ -55,7 +55,7 @@ export default function GiftSection() {
             <h2 className="font-playfair text-4xl sm:text-5xl font-semibold leading-tight text-white">
               Wedding
             </h2>
-            <div className="flex-1 h-px min-w-[40px]" style={{ backgroundColor: ACCENT, opacity: 0.7 }} />
+            <div className="flex-1 h-px min-w-10" style={{ backgroundColor: ACCENT, opacity: 0.7 }} />
           </div>
           <p className="font-great-vibes text-7xl sm:text-8xl -mt-1 text-center" style={{ color: ACCENT }}>
             Gift
@@ -69,7 +69,7 @@ export default function GiftSection() {
         </motion.div>
 
         {/* Cards */}
-        <div className="space-y-3 max-w-[280px] mx-auto sm:max-w-xs">
+        <div className="space-y-3 max-w-70 mx-auto sm:max-w-xs">
           {BANKS.map((bank, i) => (
             <motion.div
               key={bank.id}
@@ -115,7 +115,7 @@ export default function GiftSection() {
                   alt="QRIS code untuk transfer melalui dompet digital"
                   width={120}
                   height={120}
-                  className="rounded"
+                  className="rounded h-auto w-auto"
                 />
               </div>
             </div>

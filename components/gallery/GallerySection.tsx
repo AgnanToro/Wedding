@@ -60,7 +60,7 @@ export default function GallerySection() {
       >
         <div className="flex items-center justify-center gap-3">
           <div
-            className="flex-1 h-px max-w-[72px]"
+            className="flex-1 h-px max-w-18"
             style={{ backgroundColor: '#d5c5a5' }}
           />
 
@@ -81,7 +81,7 @@ export default function GallerySection() {
           </div>
 
           <div
-            className="flex-1 h-px max-w-[72px]"
+            className="flex-1 h-px max-w-18"
             style={{ backgroundColor: '#d5c5a5' }}
           />
         </div>

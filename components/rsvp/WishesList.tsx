@@ -38,7 +38,7 @@ export default function WishesList({ wishes }: WishesListProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.05 }}
             className="rounded-2xl px-5 py-4 shadow-md"
-            style={{ backgroundColor: '#f0e3c2', border: `1px solid ${ACCENT}50` }}
+            style={{ backgroundColor: '#fff', border: `1px solid ${ACCENT}60` }}
           >
             <div className="flex items-start justify-between gap-3">
               {/* Left: name + message + date */}
@@ -47,7 +47,7 @@ export default function WishesList({ wishes }: WishesListProps) {
                   {wish.name}
                 </p>
                 {wish.message && (
-                  <p className="font-cormorant text-base mt-1 leading-relaxed break-words" style={{ color: TEXT_MUTED }}>
+                  <p className="font-cormorant text-base mt-1 leading-relaxed wrap-break-word" style={{ color: TEXT_MUTED }}>
                     {wish.message}
                   </p>
                 )}
